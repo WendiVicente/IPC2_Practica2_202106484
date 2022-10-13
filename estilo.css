@@ -4,54 +4,152 @@
     padding: 0;
 
 }
-section{
-    height:200px; /*espacios*/
-}
+
 h1{
     text-transform: uppercase;
 }
+td{
+    text-align: center;
+}
 
 section#hero{
+    width: 90%;
+    height: auto;
+    margin: 5% auto;
     background-color: bisque;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    border-top: 100px;
+
 
 }
-.projects-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.projects-detail{
-    border: 5px solid gray;
-    width: 300px;
-    margin: 20px;
-}
-.projects-detail img{
 
-    width: 290px;
-}
 header{
-    position: sticky;
+
     top: 0;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: chocolate;
 }
-nav ul{
-    
-    display: flex;
-    justify-content: center;
-    list-style: none;
-
-}
-
-nav ul li{
-    margin-left: 20px;
-    margin-right: 20px ;
-    padding: 10px 20px;
+.contacto{
+    width: 90%;
+    margin: 5% auto;
+    height: auto;
     background-color: bisque;
+    padding: 20px;
+    border-radius: 20px;
+}
+.historial{
+    width: 90%;
+    margin: 5% auto;
+    height: auto;
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 20px;
+}
+.Habilidades{
+    width: 90%;
+    margin: 5% auto;
+    height: auto;
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 20px;
+}
+.git{
+    width: 90%;
+    margin: 5% auto;
+    height: auto;
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.contacto .tituloseccion{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    text-align:center ;
+    font-weight: bolder;
+    border-bottom: 2px black solid;
+}
+.Habilidades .tituloseccion{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    text-align:center ;
+    font-weight: bolder;
+    border-bottom: 2px black solid;
+}
+ .contacto .tituloinfo{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+ }
+ .Habilidades .tituloinfo{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
 
+    margin-right: 20px;
+ }
+ .contacto .info{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+ }
+ .historial .tituloseccion{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    text-align:center ;
+    font-weight: bolder;
+    border-bottom: 2px black solid;
+}
+ .historial .tituloinfo{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+ }
+ .historial .info{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+ }
+ .progress {
+    position: relative;
+	height: 25px;
+}
+.progress > .progress-type {
+	position: absolute;
+	left: 0px;
+	font-weight: 800;
+	padding: 3px 30px 2px 10px;
+	color: rgb(255, 255, 255);
+	background-color: rgba(25, 25, 25, 0.2);
+}
+.progress > .progress-completed {
+	position: absolute;
+	right: 0px;
+	font-weight: 800;
+	padding: 3px 10px 2px;
+}
+@media screen and (max-width:1700px) {
+    .contacto{
+        background-position: 50%;
+    }
+}
+@media screen and (max-width:1200px) {
+    header{
+        padding: 40px;
+    }
 }
